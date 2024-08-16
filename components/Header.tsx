@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function Header() {
     return (
         <HeaderContainer>
-        <Logo>logo</Logo>
+        <Logo>**logo**</Logo>
         <br />
         <Title>Your trusted Full Stack Web Dev</Title>
       </HeaderContainer>
