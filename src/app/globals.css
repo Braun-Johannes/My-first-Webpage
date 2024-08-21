@@ -1,7 +1,7 @@
 /* Tailwind ?! */
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -13,5 +13,6 @@ body {
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center; 
-  background-attachment: fixed; 
+  background-attachment: fixed;
+  color: rgb(var(--foreground-rgb));;
 }
