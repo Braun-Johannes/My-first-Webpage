@@ -5,7 +5,8 @@ export default function About() {
         <>
         <h1>About me</h1>
         <AboutContainer>
-            <h2>My name is Jeff</h2>
+            <Name>Johannes Braun</Name>
+            <p>Ihr Full-Stack Web Developer des Vertrauens</p>
         </AboutContainer>    
         </>
     )
@@ -16,6 +17,18 @@ const AboutContainer =styled.div`
   height: 33vh;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #000;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
   box-sizing: border-box;
-`
+  border: 1px solid #000;
+`;
+
+const Name = styled.h2`
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+`;  

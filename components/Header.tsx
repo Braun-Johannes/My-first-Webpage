@@ -5,7 +5,7 @@ export default function Header() {
         <HeaderContainer>
         <Logo>**logo**</Logo>
         <br />
-        <Title>Your trusted Full Stack Web Dev</Title>
+        <Title>Bringing your ideas to life</Title>
       </HeaderContainer>
     )
 }

@@ -8,6 +8,7 @@ export default function Posts({ text, imageSrc } : {text: any, imageSrc: any}) {
             </PostImageContainer>
             <PostText>{text}</PostText>
         </PostContainer>
+        
     )
 }
 
