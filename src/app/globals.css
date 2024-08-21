@@ -10,8 +10,8 @@
 
 body {
   background-image: url('/images/pexels-pixabay-270557.jpg');
-  background-size: cover; /* Ensure the image covers the entire background */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: center; /* Center the image */
-  background-attachment: fixed; /* Optional: Fix the background image in place */
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-attachment: fixed; 
 }
