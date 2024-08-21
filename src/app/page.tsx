@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Posts from "../../components/Posts";
 import Header from "../../components/Header";
 import About from "../../components/About";
+import Showcase from "../../components/Showcase";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
 </PostsContainer>
 <Separator />
 <About />
+<Separator />
+<Showcase />
 <Separator />
 </HomePageContainer>
 
