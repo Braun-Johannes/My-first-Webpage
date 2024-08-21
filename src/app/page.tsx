@@ -1,4 +1,5 @@
 "use client"
+import './globals.css';
 import styled from "styled-components";
 import Posts from "../../components/Posts";
 import Header from "../../components/Header";
