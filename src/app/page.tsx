@@ -4,6 +4,7 @@ import Posts from "../../components/Posts";
 import Header from "../../components/Header";
 import About from "../../components/About";
 import Showcase from "../../components/Showcase";
+import Contact from "../../components/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
 <About />
 <Separator />
 <Showcase />
+<Separator />
+<Contact />
 <Separator />
 </HomePageContainer>
 
