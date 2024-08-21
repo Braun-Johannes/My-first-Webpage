@@ -8,6 +8,7 @@ export default function Posts({ text, imageSrc } : {text: any, imageSrc: any}) {
             </PostImageContainer>
             <PostText>{text}</PostText>
         </PostContainer>
+        
     )
 }
 
@@ -33,7 +34,6 @@ const PostImageContainer = styled.div`
     position: sticky;
     top: 0;
     background: white; /* Optional: to avoid content behind the image */
-    z-index: 1; /* Ensure it stays above the text */
     width: 100%; /* Ensure it takes full width */
 `;
 
