@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Posts({ text, imageSrc } : {text: any, imageSrc: any}) {
+export default function Posts({ text, imageSrc } : {text: string, imageSrc: string}) {
     return (
         <PostContainer>
             <PostImageContainer>
