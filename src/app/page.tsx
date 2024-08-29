@@ -10,25 +10,22 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
 const [backgroundImage, setBackgroundImage] = useState("grey");
-const [showName, setShowName] = useState(false);
-const [showAbout, setShowAbout] = useState(false);
+const [show, setShow] = useState(false);
+
 
 useEffect(() => {
   setTimeout(() => {
-    setShowName(true);
-    setTimeout(() => {
-      setShowAbout(true);
+    setShow(true);
       setTimeout(() => {
         setBackgroundImage('blue');
       }, 1000);
-    }, 1000);
   }, 1000);
 }, []);
 
   return (
 <HomePageContainer $backgroundImage={backgroundImage}>
-  <Header show={showName} />
-  <About show={showName} />
+  <Header show={show} />
+  <About show={show} />
   
 <Separator />
 <h1>Whats new?</h1>

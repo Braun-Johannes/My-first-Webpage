@@ -2,12 +2,12 @@ import styled, {keyframes} from "styled-components";
 
 export default function Header({show} : {show: boolean}) {
     return (
-        <HeaderContainer show={show}>
-         
+        <HeaderContainer $show={show}>
+        
         <Logo>**logo**</Logo>
         <br />
         <Title>Bringing your ideas to life</Title>
- 
+      
       </HeaderContainer>
     )
 }
@@ -21,7 +21,7 @@ to {
 }
 `;
 
-const HeaderContainer = styled.div<{ show: boolean }>`
+const HeaderContainer = styled.div<{ $show: boolean }>`
   position: fixed;
   top: 0;
   height: 100px;
@@ -35,17 +35,11 @@ const HeaderContainer = styled.div<{ show: boolean }>`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: rgb(0, 0, 0, 0.8);
 
-  visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
+visibility: ${({ $show }) => ($show ? 'visible' : 'hidden')};
 transition: opacity  1s ease;
-animation: ${({ show }) => (show ? fadeIn : 'none')} 1s ease;
+animation: ${({ $show }) => ($show ? fadeIn : 'none')} 1s ease;
 `;
 
-/*
-const Content = styled.div<{ show: boolean }>`  
-visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
-transition: opacity  1s ease;
-animation: ${({ show }) => (show ? fadeIn : 'none')} 1s ease;`
-*/
 
 const Logo = styled.div`
   font-size: 24px;

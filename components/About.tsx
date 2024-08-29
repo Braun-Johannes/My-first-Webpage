@@ -3,7 +3,7 @@ import styled, {keyframes} from "styled-components";
 export default function About({show} : {show: boolean}) {
         return (
         <>
-        <AboutContainer show={show}>
+        <AboutContainer $show={show}>
             <Name>Johannes Braun</Name>
             <p>Ihr Full-Stack Web Developer des Vertrauens</p>
         </AboutContainer>    
@@ -21,7 +21,7 @@ to {
 }
 `;
 
-const AboutContainer =styled.div<{ show: boolean }>`
+const AboutContainer =styled.div<{ $show: boolean }>`
   width: 80%;
   height: 100vh;
   margin: 0 auto;
@@ -34,9 +34,9 @@ const AboutContainer =styled.div<{ show: boolean }>`
   
   box-sizing: border-box;
 
-  visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
-  transition: visibility 1s ease;
-  animation: ${({ show }) => (show ? fadeIn : 'none')} 1s ease;
+  visibility: ${({ $show }) => ($show ? 'visible' : 'hidden')};
+  transition: opacity 1s ease;
+  animation: ${({ $show }) => ($show ? fadeIn : 'none')} 1s ease;
 `;
 
 const slideInBefore = keyframes`
@@ -74,12 +74,12 @@ const Name = styled.h2`
 
     &::before {
         left: -110%;
-        animation: ${slideInBefore} 1s ease-out forwards;
+        animation: ${slideInBefore} 5s ease-out forwards;
     }
 
     &::after {
         right: -110%;
-        animation: ${slideInAfter} 1s ease-out forwards;
+        animation: ${slideInAfter} 5s ease-out forwards;
     }
 `;
 
