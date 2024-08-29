@@ -3,7 +3,6 @@ import styled, {keyframes} from "styled-components";
 export default function Header({show} : {show: boolean}) {
     return (
         <HeaderContainer $show={show}>
-        
         <Logo>**logo**</Logo>
         <br />
         <Title>Bringing your ideas to life</Title>

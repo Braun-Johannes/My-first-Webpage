@@ -5,7 +5,7 @@ export default function About({show} : {show: boolean}) {
         <>
         <AboutContainer $show={show}>
             <Name>Johannes Braun</Name>
-            <p>Ihr Full-Stack Web Developer des Vertrauens</p>
+            <p>Ihr Junior Full-Stack Web Developer des Vertrauens</p>
         </AboutContainer>    
         </>
     )

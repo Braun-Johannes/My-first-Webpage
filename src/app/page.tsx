@@ -28,10 +28,10 @@ useEffect(() => {
   <About show={show} />
   
 <Separator />
-<h1>Whats new?</h1>
+<h1>About me</h1>
 <PostsContainer>
-<Posts text="So this is my first Post on my first webpage. You like? Now i need to find out how it would look if i am going to pass a whole novel in here. Because the longer this gets, the better you can find some issues within." imageSrc="https://ih1.redbubble.net/image.3725339929.5984/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" />
-<Posts text="So this is my first Post on my first webpage. You like? Now i need to find out how it would look if i am going to pass a whole novel in here. Because the longer this gets, the better you can find some issues within. And sometimes you got to go crazy wild brokkoli, sausage, panda, racoon style on it. Only to check a simple feature like this one right here! asdasdsadadsaddsdasdasdasdasdasdasdasdasdasdasdasdasdasdasdsaasdasdasdasddsaasdasdasdsa jaja" imageSrc="https://via.placeholder.com/150" />
+<Posts topic="Persönliche Daten" text="So this is my first Post on my first webpage. You like? Now i need to find out how it would look if i am going to pass a whole novel in here. Because the longer this gets, the better you can find some issues within." imageSrc="https://ih1.redbubble.net/image.3725339929.5984/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" />
+<Posts topic="Manu" text="So this is my first Post on my first webpage. You like? Now i need to find out how it would look if i am going to pass a whole novel in here. Because the longer this gets, the better you can find some issues within. And sometimes you got to go crazy wild brokkoli, sausage, panda, racoon style on it. Only to check a simple feature like this one right here! asdasdsadadsaddsdasdasdasdasdasdasdasdasdasdasdasdasdasdasdsaasdasdasdasddsaasdasdasdsa jaja" imageSrc="https://via.placeholder.com/150" />
 </PostsContainer>
 <Separator />
 <Showcase />

@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-export default function Posts({ text, imageSrc } : {text: string, imageSrc: string}) {
+export default function Posts({ text, imageSrc, topic } : {text: string, imageSrc: string, topic: string}) {
     return (
         <PostContainer>
+            <PostTopic>{topic}</PostTopic>
             <PostImageContainer>
-            <PostImage src={imageSrc} alt={text} />
+                <PostImage src={imageSrc} alt={text} />
             </PostImageContainer>
-            <PostText>{text}</PostText>
+            <PostTextContainer>
+                <PostText>{text}</PostText>
+            </PostTextContainer>
         </PostContainer>
         
     )
@@ -17,15 +20,16 @@ const PostContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Align content at the top */
+    justify-content: flex-start; 
     border: 1px solid black;
     width: 33%;
     height: 33vh;
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Disable horizontal scrolling */
+    overflow-y: auto; 
+    overflow-x: hidden; 
     margin: 20px;
     position: relative;
 `;
+
 
 const PostImageContainer = styled.div`
     display: flex;
@@ -33,8 +37,7 @@ const PostImageContainer = styled.div`
     align-items: center;
     position: sticky;
     top: 0;
-    background: white; /* Optional: to avoid content behind the image */
-    width: 100%; /* Ensure it takes full width */
+    width: 100%; 
 `;
 
 const PostImage = styled.img`
@@ -44,12 +47,19 @@ const PostImage = styled.img`
 `;
 
 const PostTextContainer = styled.div`
-    margin-top: 120px; /* Adjust margin to prevent text overlap */
-    width: 100%; /* Ensure it takes full width */
+    width: 100%; 
+    height: 100%; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
 `;
 
 const PostText = styled.p`
     padding: 10px;
-    width: 100%; /* Ensure text takes full width */
-    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%; 
+    box-sizing: border-box; 
 `;
+
+const PostTopic = styled.h2`
+    display: flex;
+    margin: 10px;
+    `
