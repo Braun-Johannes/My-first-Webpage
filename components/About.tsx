@@ -1,20 +1,29 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
-export default function About() {
-    return (
+export default function About({show} : {show: boolean}) {
+        return (
         <>
-        <h1>About me</h1>
-        <AboutContainer>
+        <AboutContainer $show={show}>
             <Name>Johannes Braun</Name>
             <p>Ihr Full-Stack Web Developer des Vertrauens</p>
         </AboutContainer>    
         </>
     )
+
 }
 
-const AboutContainer =styled.div`
+const fadeIn = keyframes`
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+`;
+
+const AboutContainer =styled.div<{ $show: boolean }>`
   width: 80%;
-  height: 33vh;
+  height: 100vh;
   margin: 0 auto;
   padding: 20px;
   
@@ -23,12 +32,54 @@ const AboutContainer =styled.div`
   justify-content: center;
   align-items: center;
   
-  
   box-sizing: border-box;
-  border: 1px solid #000;
+
+  visibility: ${({ $show }) => ($show ? 'visible' : 'hidden')};
+  transition: opacity 1s ease;
+  animation: ${({ $show }) => ($show ? fadeIn : 'none')} 1s ease;
+`;
+
+const slideInBefore = keyframes`
+    0% {
+        left: -200%;
+    }
+    100% {
+        left: -110%;
+    }
+`;
+
+const slideInAfter = keyframes`
+    0% {
+        right: -200%;
+    }
+    100% {
+        right: -110%;
+    }
 `;
 
 const Name = styled.h2`
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-`;  
+    position: relative;
+    padding: 5px;
+    text-align: center;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+    }
+
+    &::before {
+        left: -110%;
+        animation: ${slideInBefore} 5s ease-out forwards;
+    }
+
+    &::after {
+        right: -110%;
+        animation: ${slideInAfter} 5s ease-out forwards;
+    }
+`;
+
