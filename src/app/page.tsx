@@ -30,8 +30,15 @@ useEffect(() => {
 <Separator />
 <h1>About me</h1>
 <PostsContainer>
-<Posts topic="Persönliche Daten" text="So this is my first Post on my first webpage. You like? Now i need to find out how it would look if i am going to pass a whole novel in here. Because the longer this gets, the better you can find some issues within." imageSrc="https://ih1.redbubble.net/image.3725339929.5984/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" />
-<Posts topic="Manu" text="So this is my first Post on my first webpage. You like? Now i need to find out how it would look if i am going to pass a whole novel in here. Because the longer this gets, the better you can find some issues within. And sometimes you got to go crazy wild brokkoli, sausage, panda, racoon style on it. Only to check a simple feature like this one right here! asdasdsadadsaddsdasdasdasdasdasdasdasdasdasdasdasdasdasdasdsaasdasdasdasddsaasdasdasdsa jaja" imageSrc="https://via.placeholder.com/150" />
+<Posts topic="Persönliche Daten" text={`Name: Braun\nVorname: Johannes\nGeburtsjahr: 1992\nStaatsangehörigkeit: deutsch\nSprachen:\nDeutsch (Muttersprache)\nEnglisch (Verhandlungssicher)`}  imageSrc="https://ih1.redbubble.net/image.3725339929.5984/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" />
+<Posts topic="Kompetenzen" text={`- Design sowie Entwicklung des Frontend-Applikationen 
+( HTML, CSS, JavaScript, React, Next.js )
+\n
+- Implementierung des Backend 
+( Node.js, Routing, DB Schemas und Models, Deployment )
+\n
+- UI/UX Basics 
+( Wireframes, Mock-ups, Usability-Tests )" imageSrc="https://via.placeholder.com/150`} imageSrc="https://via.placeholder.com/150" />
 </PostsContainer>
 <Separator />
 <Showcase />

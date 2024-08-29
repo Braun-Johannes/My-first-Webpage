@@ -15,6 +15,8 @@ export default function Posts({ text, imageSrc, topic } : {text: string, imageSr
     )
 }
 
+// <PostText dangerouslySetInnerHTML={{ __html: text }} /> 
+// to use bold and other on the Text
 
 const PostContainer = styled.div`
     display: flex;
@@ -57,6 +59,7 @@ const PostText = styled.p`
     padding: 10px;
     width: 100%; 
     box-sizing: border-box; 
+    white-space: pre-wrap;
 `;
 
 const PostTopic = styled.h2`
