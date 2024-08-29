@@ -6,13 +6,30 @@ import Header from "../../components/Header";
 import About from "../../components/About";
 import Showcase from "../../components/Showcase";
 import Contact from "../../components/Contact";
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+const [backgroundImage, setBackgroundImage] = useState("grey");
+const [showName, setShowName] = useState(false);
+const [showAbout, setShowAbout] = useState(false);
+
+useEffect(() => {
+  setTimeout(() => {
+    setShowName(true);
+    setTimeout(() => {
+      setShowAbout(true);
+      setTimeout(() => {
+        setBackgroundImage('blue');
+      }, 1000);
+    }, 1000);
+  }, 1000);
+}, []);
+
   return (
-<HomePageContainer>
-  <Header />
-  <TopicsContainer/> 
-<About />
+<HomePageContainer $backgroundImage={backgroundImage}>
+  <Header show={showName} />
+  <About show={showName} />
+  
 <Separator />
 <h1>Whats new?</h1>
 <PostsContainer>
@@ -29,12 +46,17 @@ export default function Home() {
   );
 }
 
-const HomePageContainer = styled.div`
+
+
+
+const HomePageContainer = styled.div<{ $backgroundImage: string }>`
 display: flex; 
 flex-direction: column;
 align-items: center;
 justify-content: center;
 padding: 20px;
+background-image: ${({ $backgroundImage }) => $backgroundImage};
+transition: background-color 1s ease;
 `;
 
 const PostsContainer = styled.div`
