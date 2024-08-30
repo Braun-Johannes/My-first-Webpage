@@ -1,11 +1,26 @@
 import styled from "styled-components";
+import Separator from "./Styles/Separator";
 
 export default function Showcase() {
   return (
     <>
       <h1>My Projects</h1>
       <ShowcaseContainer>
-        <h2>My projects name is &quot;Jeffs World&quot;</h2>
+        <ProjectTitle>&quot;Survival-Pets&quot;</ProjectTitle>
+        <IframeContainer src="https://capstone-project-battle-pets.vercel.app/" />
+        <ProjectDescription>
+          &quot;Survival-Pets&quot; ist das erste Projekt, das ich gemeinsam mit
+          meinen Studienkollegen Felix, Alex und Jonas realisiert habe (vielen
+          Dank für die tolle Zeit!). Dieses Projekt war unser Capstone-Projekt
+          bei neueFische GmbH. &quot;Survival-Pets&quot; ist eine charmante
+          virtuelle Haustierpflege-App, bei der die Nutzer ein Starter-Haustier
+          auswählen und dessen tägliche Bedürfnisse erfüllen. Die
+          benutzerfreundliche Oberfläche, die intuitiven Steuerungen und die
+          liebevollen Animationen schaffen eine emotionale Bindung. Durch den
+          realistischen Schwierigkeitsgrad wird die Pflege sowohl belohnend als
+          auch berührend. Perfekt für alle Tierliebhaber!
+        </ProjectDescription>
+        <Separator />
       </ShowcaseContainer>
     </>
   );
@@ -13,9 +28,27 @@ export default function Showcase() {
 
 const ShowcaseContainer = styled.div`
   width: 80%;
-  height: 33vh;
-  margin: 0 auto;
   padding: 20px;
   border: 1px solid #000;
   box-sizing: border-box;
+`;
+
+const ProjectTitle = styled.h2`
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  text-align: center;
+`;
+
+const ProjectDescription = styled.p`
+  margin-bottom: 20px;
+  font-size: 1em;
+  padding: 10px;
+  color: black;
+  background-color: #a9a9a9c8;
+`;
+
+const IframeContainer = styled.iframe`
+  width: 100%;
+  height: 100vh;
+  border: none;
 `;
