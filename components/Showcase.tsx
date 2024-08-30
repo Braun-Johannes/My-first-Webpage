@@ -7,7 +7,11 @@ export default function Showcase() {
       <h1>My Projects</h1>
       <ShowcaseContainer>
         <ProjectTitle>&quot;Survival-Pets&quot;</ProjectTitle>
-        <IframeContainer src="https://capstone-project-battle-pets.vercel.app/" />
+        <IframeContainer
+          src="https://capstone-project-battle-pets.vercel.app/"
+          title="Survival-Pets Project"
+          aria-label="Survival-Pets Project"
+        />
         <ProjectDescription>
           &quot;Survival-Pets&quot; ist das erste Projekt, das ich gemeinsam mit
           meinen Studienkollegen Felix, Alex und Jonas realisiert habe (vielen

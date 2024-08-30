@@ -42,11 +42,13 @@ Staatsangehörigkeit:\t\tdeutsch
 
 Sprachen:\n\n\tDeutsch (Muttersprache)\n\tEnglisch (Verhandlungssicher)`}
           imageSrc="https://via.placeholder.com/150"
+          alt="Placeholder image für Persönliche Daten"
         />
         <Posts
           topic="Zusammenfassung"
           text={`Motivierter Junior Webentwickler mit Ausbildung und Erfahrung in der	Erstellung dynamischer Webanwendungen mit JavaScript,	HTML, CSS und REACT. Umfangreicher Hintergrund in der 	Front-End- und Back-End-Entwicklung mit einer Leidenschaft für 	kontinuierliches Lernen und Verbesserung.`}
           imageSrc="https://via.placeholder.com/150"
+          alt="Placeholder image für Zusammenfassung"
         />
         <Posts
           topic="5-Jahres Rückblick"
@@ -71,7 +73,8 @@ Servicetechniker im verbeugenden
 Brandschutz
             `}
           imageSrc="https://via.placeholder.com/150"
-        ></Posts>
+          alt="Placeholder image für 5-Jahres Rückblick "
+        />
         <Posts
           topic="Kompetenzen"
           text={`- Design sowie Entwicklung des Frontend-Applikationen 
@@ -83,6 +86,7 @@ Brandschutz
 - UI/UX Basics 
 ( Wireframes, Mock-ups, Usability-Tests )" imageSrc="https://via.placeholder.com/150`}
           imageSrc="https://via.placeholder.com/150"
+          alt="Placeholder image für Kompetenzen "
         />
       </PostsContainer>
       <Separator />

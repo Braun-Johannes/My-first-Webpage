@@ -2,8 +2,8 @@ import styled, { keyframes } from "styled-components";
 
 export default function Header({ show }: { show: boolean }) {
   return (
-    <HeaderContainer $show={show}>
-      <Logo>**logo**</Logo>
+    <HeaderContainer $show={show} role="banner">
+      <Logo aria-label="My own Logo">**logo**</Logo>
       <br />
       <Title>Bringing your ideas to life</Title>
     </HeaderContainer>

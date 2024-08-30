@@ -4,10 +4,12 @@ export default function Posts({
   text,
   imageSrc,
   topic,
+  alt,
 }: {
   text: string;
   imageSrc: string;
   topic: string;
+  alt: string;
 }) {
   return (
     <PostContainer>
