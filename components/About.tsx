@@ -3,8 +3,8 @@ import styled, { keyframes } from "styled-components";
 export default function About({ show }: { show: boolean }) {
   return (
     <>
-      <AboutContainer $show={show}>
-        <Name>Johannes Braun</Name>
+      <AboutContainer $show={show} aria-labelledby="about-heading">
+        <Name id="about-heading">Johannes Braun</Name>
         <p>Ihr Junior Full-Stack Web Developer des Vertrauens</p>
       </AboutContainer>
     </>

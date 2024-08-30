@@ -10,13 +10,15 @@ export default function Contact() {
           Schreiben Sie mir eine E-Mail an:
           <br />
           <br />
-          Braun-Johannes@outlook.de
+          <a href="mailto:Braun-Johannes@outlook.de">
+            Braun-Johannes@outlook.de
+          </a>
         </p>
         <p>
           Oder rufen sie mich an unter:
           <br />
           <br />
-          015738124461
+          +49 15738124461
         </p>
       </ContactContainer>
     </>
