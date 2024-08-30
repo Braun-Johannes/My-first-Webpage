@@ -1,15 +1,14 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-export default function About({show} : {show: boolean}) {
-        return (
-        <>
-        <AboutContainer $show={show}>
-            <Name>Johannes Braun</Name>
-            <p>Ihr Full-Stack Web Developer des Vertrauens</p>
-        </AboutContainer>    
-        </>
-    )
-
+export default function About({ show }: { show: boolean }) {
+  return (
+    <>
+      <AboutContainer $show={show}>
+        <Name>Johannes Braun</Name>
+        <p>Ihr Junior Full-Stack Web Developer des Vertrauens</p>
+      </AboutContainer>
+    </>
+  );
 }
 
 const fadeIn = keyframes`
@@ -21,22 +20,22 @@ to {
 }
 `;
 
-const AboutContainer =styled.div<{ $show: boolean }>`
+const AboutContainer = styled.div<{ $show: boolean }>`
   width: 80%;
   height: 100vh;
   margin: 0 auto;
   padding: 20px;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   box-sizing: border-box;
 
-  visibility: ${({ $show }) => ($show ? 'visible' : 'hidden')};
+  visibility: ${({ $show }) => ($show ? "visible" : "hidden")};
   transition: opacity 1s ease;
-  animation: ${({ $show }) => ($show ? fadeIn : 'none')} 1s ease;
+  animation: ${({ $show }) => ($show ? fadeIn : "none")} 1s ease;
 `;
 
 const slideInBefore = keyframes`
@@ -58,28 +57,27 @@ const slideInAfter = keyframes`
 `;
 
 const Name = styled.h2`
-    position: relative;
-    padding: 5px;
-    text-align: center;
+  position: relative;
+  padding: 5px;
+  text-align: center;
 
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        height: 2px;
-        background-color: #ffffff;
-    }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+  }
 
-    &::before {
-        left: -110%;
-        animation: ${slideInBefore} 5s ease-out forwards;
-    }
+  &::before {
+    left: -110%;
+    animation: ${slideInBefore} 5s ease-out forwards;
+  }
 
-    &::after {
-        right: -110%;
-        animation: ${slideInAfter} 5s ease-out forwards;
-    }
+  &::after {
+    right: -110%;
+    animation: ${slideInAfter} 5s ease-out forwards;
+  }
 `;
-

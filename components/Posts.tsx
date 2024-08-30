@@ -1,55 +1,74 @@
 import styled from "styled-components";
 
-export default function Posts({ text, imageSrc } : {text: string, imageSrc: string}) {
-    return (
-        <PostContainer>
-            <PostImageContainer>
-            <PostImage src={imageSrc} alt={text} />
-            </PostImageContainer>
-            <PostText>{text}</PostText>
-        </PostContainer>
-        
-    )
+export default function Posts({
+  text,
+  imageSrc,
+  topic,
+}: {
+  text: string;
+  imageSrc: string;
+  topic: string;
+}) {
+  return (
+    <PostContainer>
+      <PostTopic>{topic}</PostTopic>
+      <PostImageContainer>
+        <PostImage src={imageSrc} alt={text} />
+      </PostImageContainer>
+      <PostTextContainer>
+        <PostText>{text}</PostText>
+      </PostTextContainer>
+    </PostContainer>
+  );
 }
 
+// <PostText dangerouslySetInnerHTML={{ __html: text }} />
+// to use bold and other on the Text
 
 const PostContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Align content at the top */
-    border: 1px solid black;
-    width: 33%;
-    height: 33vh;
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Disable horizontal scrolling */
-    margin: 20px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid black;
+  width: 33%;
+  height: 33vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 20px;
+  position: relative;
 `;
 
 const PostImageContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background: white; /* Optional: to avoid content behind the image */
-    width: 100%; /* Ensure it takes full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
 `;
 
 const PostImage = styled.img`
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
 `;
 
 const PostTextContainer = styled.div`
-    margin-top: 120px; /* Adjust margin to prevent text overlap */
-    width: 100%; /* Ensure it takes full width */
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 `;
 
 const PostText = styled.p`
-    padding: 10px;
-    width: 100%; /* Ensure text takes full width */
-    box-sizing: border-box; /* Include padding in width calculation */
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+`;
+
+const PostTopic = styled.h2`
+  display: flex;
+  margin: 10px;
 `;
