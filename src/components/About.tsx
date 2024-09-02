@@ -5,7 +5,9 @@ export default function About({ show }: { show: boolean }) {
     <>
       <AboutContainer $show={show} aria-labelledby="about-heading">
         <Name id="about-heading">Johannes Braun</Name>
-        <p>Ihr Junior Full-Stack Web Developer des Vertrauens</p>
+        <Description>
+          Ihr Junior Full-Stack Web Developer des Vertrauens
+        </Description>
       </AboutContainer>
     </>
   );
@@ -36,6 +38,16 @@ const AboutContainer = styled.div<{ $show: boolean }>`
   visibility: ${({ $show }) => ($show ? "visible" : "hidden")};
   transition: opacity 1s ease;
   animation: ${({ $show }) => ($show ? fadeIn : "none")} 1s ease;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 15px;
+  }
+
+  @media (max-width: 523px) {
+    width: 95%;
+    padding: 10px;
+  }
 `;
 
 const slideInBefore = keyframes`
@@ -79,5 +91,27 @@ const Name = styled.h2`
   &::after {
     right: -110%;
     animation: ${slideInAfter} 5s ease-out forwards;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 523px) {
+    font-size: 1.8rem;
+  }
+`;
+
+const Description = styled.p`
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 523px) {
+    font-size: 0.9rem;
   }
 `;

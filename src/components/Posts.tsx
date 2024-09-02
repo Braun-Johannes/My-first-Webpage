@@ -15,7 +15,7 @@ export default function Posts({
     <PostContainer>
       <PostTopic>{topic}</PostTopic>
       <PostImageContainer>
-        <PostImage src={imageSrc} alt={text} />
+        <PostImage src={imageSrc} alt={alt} />
       </PostImageContainer>
       <PostTextContainer>
         <PostText>{text}</PostText>
@@ -33,12 +33,29 @@ const PostContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   border: 1px solid black;
-  width: 33%;
+  width: 90vw;
+  max-width: 600px;
   height: 33vh;
   overflow-y: auto;
   overflow-x: hidden;
-  margin: 20px;
+  margin: 20px auto;
   position: relative;
+
+  @media (max-width: 768px) {
+    width: 95vw;
+    margin: 10px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100vw;
+    margin: 5px;
+  }
+
+  @media (max-width: 375px) and (max-height: 667px) {
+    width: 100vw;
+    height: auto;
+    margin: 10px auto;
+  }
 `;
 
 const PostImageContainer = styled.div`
@@ -51,9 +68,22 @@ const PostImageContainer = styled.div`
 `;
 
 const PostImage = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 20vw;
+  max-width: 100px;
+  height: auto;
   margin: 10px;
+
+  @media (max-width: 768px) {
+    width: 25vw;
+  }
+
+  @media (max-width: 480px) {
+    width: 30vw;
+  }
+
+  @media (max-width: 375px) and (max-height: 667px) {
+    width: 35vw;
+  }
 `;
 
 const PostTextContainer = styled.div`
@@ -65,12 +95,21 @@ const PostTextContainer = styled.div`
 
 const PostText = styled.p`
   padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
   white-space: pre-wrap;
+  text-align: center;
+  font-size: 1.6rem;
+
+  @media (max-width: 375px) and (max-height: 667px) {
+    font-size: 1rem;
+  }
 `;
 
 const PostTopic = styled.h2`
   display: flex;
   margin: 10px;
+  text-align: center;
+
+  @media (max-width: 375px) and (max-height: 667px) {
+    font-size: 1.7rem;
+  }
 `;

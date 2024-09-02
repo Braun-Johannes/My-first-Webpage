@@ -3,8 +3,7 @@ import styled, { keyframes } from "styled-components";
 export default function Header({ show }: { show: boolean }) {
   return (
     <HeaderContainer $show={show} role="banner">
-      <Logo aria-label="My own Logo">**logo**</Logo>
-      <br />
+      <StyledImage src="/images/Logo.png" alt="Logo" />
       <Title>Bringing your ideas to life</Title>
     </HeaderContainer>
   );
@@ -38,12 +37,13 @@ const HeaderContainer = styled.div<{ $show: boolean }>`
   animation: ${({ $show }) => ($show ? fadeIn : "none")} 1s ease;
 `;
 
-const Logo = styled.div`
-  font-size: 24px;
-  font-weight: bold;
-`;
-
 const Title = styled.h2`
   margin: 0;
   font-size: 18px;
+`;
+
+const StyledImage = styled.img`
+  margin: 10px;
+  width: 80px;
+  height: 80px;
 `;
