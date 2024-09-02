@@ -39,13 +39,13 @@ Geburtsjahr:\t\t\t\t1992
 Staatsangehörigkeit:\t\tdeutsch
 
 Sprachen:\n\n\tDeutsch (Muttersprache)\n\tEnglisch (Verhandlungssicher)`}
-          imageSrc="https://via.placeholder.com/150"
+          imageSrc="images/package-icon.png.png"
           alt="Placeholder image für Persönliche Daten"
         />
         <Posts
           topic="Zusammenfassung"
           text={`Motivierter Junior Webentwickler mit Ausbildung und Erfahrung in der	Erstellung dynamischer Webanwendungen mit JavaScript,	HTML, CSS und REACT. Umfangreicher Hintergrund in der 	Front-End- und Back-End-Entwicklung mit einer Leidenschaft für 	kontinuierliches Lernen und Verbesserung.`}
-          imageSrc="https://via.placeholder.com/150"
+          imageSrc="/images/json-icon.png.png"
           alt="Placeholder image für Zusammenfassung"
         />
         <Posts
@@ -70,7 +70,7 @@ CWS Fire Safety , Niederlassung Dreieich
 Servicetechniker im verbeugenden 
 Brandschutz
             `}
-          imageSrc="https://via.placeholder.com/150"
+          imageSrc="\images\script-icon.png.png"
           alt="Placeholder image für 5-Jahres Rückblick "
         />
         <Posts
@@ -82,8 +82,8 @@ Brandschutz
 ( Node.js, Routing, DB Schemas und Models, Deployment )
 \n
 - UI/UX Basics 
-( Wireframes, Mock-ups, Usability-Tests )" imageSrc="https://via.placeholder.com/150`}
-          imageSrc="https://via.placeholder.com/150"
+( Wireframes, Mock-ups, Usability-Tests ) `}
+          imageSrc="\images\xml-icon.png.png"
           alt="Placeholder image für Kompetenzen "
         />
       </PostsContainer>
