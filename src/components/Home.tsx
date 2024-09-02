@@ -1,13 +1,11 @@
-"use client";
-import "./globals.css";
 import styled from "styled-components";
-import Posts from "../../components/Posts";
-import Header from "../../components/Header";
-import About from "../../components/About";
-import Showcase from "../../components/Showcase";
-import Contact from "../../components/Contact";
-import Separator from "../../components/Styles/Separator";
 import { useEffect, useState } from "react";
+import Header from "./Header.tsx";
+import About from "./About.tsx";
+import Separator from "./Styles/Separator.tsx";
+import Posts from "./Posts.tsx";
+import Showcase from "./Showcase.tsx";
+import Contact from "./Contact.tsx";
 
 export default function Home() {
   const [backgroundImage, setBackgroundImage] = useState("grey");
@@ -18,8 +16,8 @@ export default function Home() {
       setShow(true);
       setTimeout(() => {
         setBackgroundImage("blue");
-      }, 1000);
-    }, 1000);
+      });
+    });
   }, []);
 
   return (
