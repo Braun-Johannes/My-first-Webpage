@@ -97,10 +97,19 @@ const PostText = styled.p`
   padding: 10px;
   white-space: pre-wrap;
   text-align: center;
+  font-size: 1.6rem;
+
+  @media (max-width: 375px) and (max-height: 667px) {
+    font-size: 1rem;
+  }
 `;
 
 const PostTopic = styled.h2`
   display: flex;
   margin: 10px;
   text-align: center;
+
+  @media (max-width: 375px) and (max-height: 667px) {
+    font-size: 1.7rem;
+  }
 `;
