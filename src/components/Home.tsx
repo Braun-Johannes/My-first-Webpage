@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { useEffect, useState } from "react";
 import Header from "./Header.tsx";
 import About from "./About.tsx";
 import Separator from "./Styles/Separator.tsx";
@@ -8,22 +7,10 @@ import Showcase from "./Showcase.tsx";
 import Contact from "./Contact.tsx";
 
 export default function Home() {
-  const [backgroundImage, setBackgroundImage] = useState("grey");
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShow(true);
-      setTimeout(() => {
-        setBackgroundImage("blue");
-      });
-    });
-  }, []);
-
   return (
-    <HomePageContainer $backgroundImage={backgroundImage}>
-      <Header show={show} />
-      <About show={show} />
+    <HomePageContainer>
+      <Header />
+      <About />
 
       <Separator />
       <h1>About me</h1>
@@ -96,13 +83,13 @@ Brandschutz
   );
 }
 
-const HomePageContainer = styled.div<{ $backgroundImage: string }>`
+const HomePageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-image: ${({ $backgroundImage }) => $backgroundImage};
+  background-image: "grey";
   transition: background-color 1s ease;
 `;
 

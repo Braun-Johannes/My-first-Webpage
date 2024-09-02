@@ -1,9 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
-export default function About({ show }: { show: boolean }) {
+export default function About() {
   return (
     <>
-      <AboutContainer $show={show} aria-labelledby="about-heading">
+      <AboutContainer aria-labelledby="about-heading">
         <Name id="about-heading">Johannes Braun</Name>
         <Description>
           Ihr Junior Full-Stack Web Developer des Vertrauens
@@ -22,7 +22,7 @@ to {
 }
 `;
 
-const AboutContainer = styled.div<{ $show: boolean }>`
+const AboutContainer = styled.div`
   width: 80%;
   height: 100vh;
   margin: 0 auto;
@@ -35,9 +35,8 @@ const AboutContainer = styled.div<{ $show: boolean }>`
 
   box-sizing: border-box;
 
-  visibility: ${({ $show }) => ($show ? "visible" : "hidden")};
   transition: opacity 1s ease;
-  animation: ${({ $show }) => ($show ? fadeIn : "none")} 1s ease;
+  animation: ${fadeIn} 1s ease;
 
   @media (max-width: 768px) {
     width: 90%;

@@ -8,8 +8,11 @@ export default defineConfig(async () => ({
     sourcemap: true,
     rollupOptions: {
       output: {
-        manualChunks: (path: string) => path.split('/').reverse()[path.split('/').reverse().indexOf('node_modules') - 1]
-      }
-    }
-  }
+        manualChunks: (path: string) =>
+          path.split("/").reverse()[
+            path.split("/").reverse().indexOf("node_modules") - 1
+          ],
+      },
+    },
+  },
 }));
