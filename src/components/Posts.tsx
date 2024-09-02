@@ -15,7 +15,7 @@ export default function Posts({
     <PostContainer>
       <PostTopic>{topic}</PostTopic>
       <PostImageContainer>
-        <PostImage src={imageSrc} alt={text} />
+        <PostImage src={imageSrc} alt={alt} />
       </PostImageContainer>
       <PostTextContainer>
         <PostText>{text}</PostText>
