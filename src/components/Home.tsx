@@ -11,7 +11,6 @@ export default function Home() {
     <HomePageContainer>
       <Header />
       <About />
-
       <Separator />
       <h1>About me</h1>
       <PostsContainer>

@@ -24,9 +24,6 @@ export default function Posts({
   );
 }
 
-// <PostText dangerouslySetInnerHTML={{ __html: text }} />
-// to use bold and other on the Text
-
 const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
