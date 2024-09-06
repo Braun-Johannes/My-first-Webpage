@@ -20,5 +20,5 @@ export default defineConfig(() => ({
       },
     },
   },
-  base: "/My-first-Webpage/",
+  base: "/home/",
 }));
