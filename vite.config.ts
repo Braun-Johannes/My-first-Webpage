@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { resolve } from "path";
 
 // https://vitejs.dev/config/
-export default defineConfig(async () => ({
+export default defineConfig(() => ({
   plugins: [react()],
   build: {
     sourcemap: true,
@@ -13,6 +14,11 @@ export default defineConfig(async () => ({
             path.split("/").reverse().indexOf("node_modules") - 1
           ],
       },
+      input: {
+        main: resolve(__dirname, "index.html"),
+        spaFallback: resolve(__dirname, "404.html"),
+      },
     },
   },
+  base: "/My-first-Webpage/",
 }));
