@@ -20,5 +20,5 @@ export default defineConfig(() => ({
       },
     },
   },
-  base: "/home/",
+  base: "/home.github.io/",
 }));
