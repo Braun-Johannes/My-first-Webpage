@@ -31,7 +31,7 @@ Sprachen:\n\n\tDeutsch (Muttersprache)\n\tEnglisch (Verhandlungssicher)`}
         <Posts
           topic="Zusammenfassung"
           text={`Motivierter Junior Webentwickler mit Ausbildung und Erfahrung in der	Erstellung dynamischer Webanwendungen mit JavaScript,	HTML, CSS und REACT. Umfangreicher Hintergrund in der 	Front-End- und Back-End-Entwicklung mit einer Leidenschaft für 	kontinuierliches Lernen und Verbesserung.`}
-          imageSrc="/images/json-icon.png.png"
+          imageSrc="images/json-icon.png.png"
           alt="Placeholder image für Zusammenfassung"
         />
         <Posts
@@ -56,7 +56,7 @@ CWS Fire Safety , Niederlassung Dreieich
 Servicetechniker im verbeugenden 
 Brandschutz
             `}
-          imageSrc="\images\script-icon.png.png"
+          imageSrc="images/script-icon.png.png"
           alt="Placeholder image für 5-Jahres Rückblick "
         />
         <Posts
@@ -69,7 +69,7 @@ Brandschutz
 \n
 - UI/UX Basics 
 ( Wireframes, Mock-ups, Usability-Tests ) `}
-          imageSrc="\images\xml-icon.png.png"
+          imageSrc="images/xml-icon.png.png"
           alt="Placeholder image für Kompetenzen "
         />
       </PostsContainer>

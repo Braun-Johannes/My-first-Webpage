@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 export default function Header() {
   return (
     <HeaderContainer role="banner">
-      <StyledImage src="/images/Logo.png" alt="Logo" />
+      <StyledImage src="images/Logo.png" alt="Logo" />
       <Title>Bringing your ideas to life</Title>
     </HeaderContainer>
   );
