@@ -30,7 +30,7 @@ Sprachen:\n\n\tDeutsch (Muttersprache)\n\tEnglisch (Verhandlungssicher)`}
         />
         <Posts
           topic="Zusammenfassung"
-          text={`Motivierter Junior Webentwickler mit Ausbildung und Erfahrung in der	Erstellung dynamischer Webanwendungen mit JavaScript,	HTML, CSS und REACT. Umfangreicher Hintergrund in der 	Front-End- und Back-End-Entwicklung mit einer Leidenschaft für 	kontinuierliches Lernen und Verbesserung.`}
+          text={`Motivierter Junior Webentwickler mit Ausbildung und Erfahrung in der Erstellung dynamischer Webanwendungen mit JavaScript, HTML, CSS und REACT. Umfangreicher Hintergrund in der Front-End- und Back-End-Entwicklung mit einer Leidenschaft für kontinuierliches Lernen und Verbesserung.`}
           imageSrc="images/json-icon.png.png"
           alt="Placeholder image für Zusammenfassung"
         />
@@ -65,7 +65,7 @@ Brandschutz
 ( HTML, CSS, JavaScript, React, Next.js )
 \n
 - Implementierung des Backend 
-( Node.js, Routing, DB Schemas und Models, Deployment )
+( Node.js, RESTful APIs, Routing, DB Schemas und Models, Deployment )
 \n
 - UI/UX Basics 
 ( Wireframes, Mock-ups, Usability-Tests ) `}

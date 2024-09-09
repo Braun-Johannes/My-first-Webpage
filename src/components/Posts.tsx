@@ -30,6 +30,7 @@ const PostContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   border: 1px solid black;
+  border-radius: 30px;
   width: 90vw;
   max-width: 600px;
   height: 33vh;
@@ -37,6 +38,8 @@ const PostContainer = styled.div`
   overflow-x: hidden;
   margin: 20px auto;
   position: relative;
+
+  box-sizing: border-box;
 
   @media (max-width: 768px) {
     width: 95vw;
@@ -94,7 +97,7 @@ const PostText = styled.p`
   padding: 10px;
   white-space: pre-wrap;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1rem;
 
   @media (max-width: 375px) and (max-height: 667px) {
     font-size: 1rem;
