@@ -1,5 +1,3 @@
-/* Tailwind ?! */
-
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
@@ -15,6 +13,7 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+/* Sets grey overlay for background */
 body::before {
   content: "";
   position: fixed;

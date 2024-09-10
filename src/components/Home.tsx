@@ -77,7 +77,6 @@ Brandschutz
       <Showcase />
       <Separator />
       <Contact />
-      <Separator />
     </HomePageContainer>
   );
 }

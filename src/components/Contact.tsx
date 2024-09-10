@@ -30,7 +30,8 @@ const ContactContainer = styled.div`
   height: auto;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #000;
   box-sizing: border-box;
   text-align: center;
+  border-radius: 30px;
+  background: #343544;
 `;

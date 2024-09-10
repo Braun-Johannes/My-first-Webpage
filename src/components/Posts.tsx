@@ -29,26 +29,29 @@ const PostContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border: 1px solid black;
+
   border-radius: 30px;
   width: 90vw;
   max-width: 600px;
-  height: 33vh;
+  height: auto;
   overflow-y: auto;
   overflow-x: hidden;
   margin: 20px auto;
   position: relative;
 
   box-sizing: border-box;
+  background: #343544;
 
   @media (max-width: 768px) {
     width: 95vw;
-    margin: 10px;
+    height: auto;
+    margin: 10px auto;
   }
 
   @media (max-width: 480px) {
     width: 100vw;
-    margin: 5px;
+    height: auto;
+    margin: 10px auto;
   }
 
   @media (max-width: 375px) and (max-height: 667px) {
@@ -74,15 +77,15 @@ const PostImage = styled.img`
   margin: 10px;
 
   @media (max-width: 768px) {
-    width: 25vw;
+    max-width: 10vw;
   }
 
   @media (max-width: 480px) {
-    width: 30vw;
+    width: 10vw;
   }
 
   @media (max-width: 375px) and (max-height: 667px) {
-    width: 35vw;
+    width: 10vw;
   }
 `;
 
