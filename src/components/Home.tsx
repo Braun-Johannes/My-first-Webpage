@@ -5,6 +5,7 @@ import Separator from "./Styles/Separator.tsx";
 import Posts from "./Posts.tsx";
 import Showcase from "./Showcase.tsx";
 import Contact from "./Contact.tsx";
+import Footer from "./Footer.tsx";
 
 export default function Home() {
   return (
@@ -77,6 +78,8 @@ Brandschutz
       <Showcase />
       <Separator />
       <Contact />
+      <Separator />
+      <Footer />
     </HomePageContainer>
   );
 }
@@ -86,7 +89,7 @@ const HomePageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 20px;
   background-image: "grey";
   transition: background-color 1s ease;
 `;
