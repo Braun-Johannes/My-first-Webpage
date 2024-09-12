@@ -4,14 +4,15 @@ import { useNavigate } from "react-router-dom";
 export default function Datenschutz() {
   const navigate = useNavigate();
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+  function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
+    window.scrollTo(0, 0);
     navigate("/home/");
-  };
+  }
 
   return (
     <div className="containerDatenschutz">
-      <h1>Datenschutzerklärung</h1>
+      <h1 className="topic">Datenschutzerklärung</h1>
       <br />
       <h2>1. Datenschutz auf einen Blick</h2>
       <h3>Allgemeine Hinweise</h3>

@@ -3,10 +3,11 @@ import { useNavigate } from "react-router-dom";
 export default function Datenschutz() {
   const navigate = useNavigate();
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+  function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
+    window.scrollTo(0, 0);
     navigate("/home/");
-  };
+  }
 
   return (
     <div>

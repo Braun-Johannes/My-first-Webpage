@@ -4,16 +4,17 @@ import { useNavigate } from "react-router-dom";
 export default function Footer() {
   const navigate = useNavigate();
 
-  const handleClickDatenschutz = (
-    event: React.MouseEvent<HTMLButtonElement>
-  ) => {
+  function handleClickDatenschutz(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
+    window.scrollTo(0, 0);
     navigate("/datenschutz");
-  };
-  const handleClickImpressum = (event: React.MouseEvent<HTMLButtonElement>) => {
+  }
+
+  function handleClickImpressum(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
+    window.scrollTo(0, 0);
     navigate("/impressum");
-  };
+  }
 
   return (
     <div className="container">
