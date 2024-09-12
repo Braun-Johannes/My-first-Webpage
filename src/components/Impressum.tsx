@@ -1,4 +1,5 @@
 import "./Styles/Datenschutz.css";
+import "./Styles/Footer.css";
 import { useNavigate } from "react-router-dom";
 
 export default function Datenschutz() {
@@ -28,7 +29,9 @@ export default function Datenschutz() {
       </h3>
       <h2>Vertreten durch:</h2>
       <h3>Johannes Braun</h3>
-      <button onClick={handleClick}>Startseite</button>
+      <button className="footer" onClick={handleClick}>
+        Startseite
+      </button>
     </div>
   );
 }

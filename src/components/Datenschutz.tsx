@@ -1,4 +1,5 @@
 import "./Styles/Datenschutz.css";
+import "./Styles/Footer.css";
 import { useNavigate } from "react-router-dom";
 
 export default function Datenschutz() {
@@ -298,7 +299,9 @@ export default function Datenschutz() {
         gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen
         – bleiben unberührt.
       </p>
-      <button onClick={handleClick}>Startseite</button>
+      <button className="footer" onClick={handleClick}>
+        Startseite
+      </button>
     </div>
   );
 }
