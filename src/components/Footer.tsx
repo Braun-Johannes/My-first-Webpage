@@ -18,10 +18,14 @@ export default function Footer() {
 
   return (
     <div className="container">
-      <button id="datenschutz" onClick={handleClickDatenschutz}>
+      <button
+        className="footer"
+        id="datenschutz"
+        onClick={handleClickDatenschutz}
+      >
         Datenschutz
       </button>
-      <button id="impressum" onClick={handleClickImpressum}>
+      <button className="footer" id="impressum" onClick={handleClickImpressum}>
         Impressum
       </button>
     </div>

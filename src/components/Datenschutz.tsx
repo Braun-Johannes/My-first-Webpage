@@ -298,7 +298,7 @@ export default function Datenschutz() {
         gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen
         – bleiben unberührt.
       </p>
-      <button onClick={handleClick}>Back to Home</button>
+      <button onClick={handleClick}>Startseite</button>
     </div>
   );
 }
