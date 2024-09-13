@@ -90,3 +90,9 @@
     font-size: 1rem;
   }
 }
+
+.line {
+  border: 1px solid #ffffff;
+  width: 80%;
+  text-align: center;
+}

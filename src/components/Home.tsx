@@ -6,6 +6,9 @@ import Showcase from "./Showcase.tsx";
 import Contact from "./Contact.tsx";
 import Footer from "./Footer.tsx";
 import Personal from "./Personal.tsx";
+import Summary from "./Summary.tsx";
+import Review from "./Review.tsx";
+import Skills from "./Skills.tsx";
 
 export default function Home() {
   return (
@@ -19,6 +22,21 @@ export default function Home() {
           topic="Persönliche Daten"
           imageSrc="images/package-icon.png.png"
           alt="Placeholder image für Persönliche Daten"
+        />
+        <Summary
+          topic="Zusammenfassung"
+          imageSrc="images/json-icon.png.png"
+          alt="Placeholder image für Zusammenfassung"
+        />
+        <Skills
+          topic="Kompetenzen"
+          imageSrc="images/xml-icon.png.png"
+          alt="Placeholder image für Kompetenzen "
+        />
+        <Review
+          topic="5-Jahres Rückblick"
+          imageSrc="images/script-icon.png.png"
+          alt="Placeholder image für 5-Jahres Rückblick "
         />
       </PostsContainer>
       <Separator />
