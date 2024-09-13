@@ -2,6 +2,7 @@
   from {
     opacity: 0;
     transform: translate3d(20%, 0, 0);
+    transform: rotate3d(0, 1, 0, 90deg);
   }
 
   to {
@@ -18,6 +19,7 @@
   from {
     opacity: 0;
     transform: translate3d(-20%, 0, 0);
+    transform: rotate3d(0, 1, 0, 90deg);
   }
 
   to {
