@@ -33,9 +33,14 @@ export default function Showcase() {
 const ShowcaseContainer = styled.div`
   width: 80%;
   padding: 20px;
-  border-radius: 30px;
+  border-radius: 15px;
   background: #343544;
   box-sizing: border-box;
+
+  @media (max-width: 500px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const ProjectTitle = styled.h2`
@@ -50,7 +55,7 @@ const ProjectDescription = styled.p`
   padding: 10px;
   color: black;
   background-color: #a9a9a9c8;
-  border-radius: 30px;
+  border-radius: 15px;
 `;
 
 const IframeContainer = styled.iframe`
