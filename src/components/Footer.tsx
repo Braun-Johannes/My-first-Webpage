@@ -7,13 +7,13 @@ export default function Footer() {
   function handleClickDatenschutz(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     window.scrollTo(0, 0);
-    navigate("/datenschutz");
+    navigate("/home/datenschutz");
   }
 
   function handleClickImpressum(event: React.MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     window.scrollTo(0, 0);
-    navigate("/impressum");
+    navigate("/home/impressum");
   }
 
   return (
@@ -21,11 +21,15 @@ export default function Footer() {
       <button
         className="footer"
         id="datenschutz"
-        onClick={handleClickDatenschutz}
+        onClick={(event) => handleClickDatenschutz(event)}
       >
         Datenschutz
       </button>
-      <button className="footer" id="impressum" onClick={handleClickImpressum}>
+      <button
+        className="footer"
+        id="impressum"
+        onClick={(event) => handleClickImpressum(event)}
+      >
         Impressum
       </button>
     </div>

@@ -15,8 +15,8 @@ root.render(
     <Router>
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/datenschutz" element={<Datenschutz />} />
-        <Route path="/impressum" element={<Impressum />} />
+        <Route path="/home/datenschutz" element={<Datenschutz />} />
+        <Route path="/home/impressum" element={<Impressum />} />
       </Routes>
     </Router>
   </StrictMode>
