@@ -10,12 +10,12 @@ export default function Contact() {
           Schreiben Sie mir eine E-Mail an:
           <br />
           <br />
-          <a href="mailto:braun-johannes@outlook.de">
+          <ContactLink href="mailto:braun-johannes@outlook.de">
             braun-johannes@outlook.de
-          </a>
+          </ContactLink>
         </p>
         <p>Oder rufen sie mich an unter:</p>
-        <a href="tel: +49 15738124461"> +49 15738124461</a>
+        <ContactLink href="tel: +49 15738124461"> +49 15738124461</ContactLink>
       </ContactContainer>
     </>
   );
@@ -30,4 +30,9 @@ const ContactContainer = styled.div`
   text-align: center;
   border-radius: 15px;
   background: #343544;
+`;
+
+const ContactLink = styled.a`
+  color: #02e6c0;
+  text-decoration: none;
 `;
