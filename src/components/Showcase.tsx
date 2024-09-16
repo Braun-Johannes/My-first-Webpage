@@ -53,8 +53,6 @@ const ProjectDescription = styled.p`
   margin-bottom: 20px;
   font-size: 1em;
   padding: 10px;
-  color: black;
-  background-color: #a9a9a9c8;
   border-radius: 15px;
 `;
 

@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  background: #343544;
   display: flex;
   justify-content: center;
   gap: 1rem;
