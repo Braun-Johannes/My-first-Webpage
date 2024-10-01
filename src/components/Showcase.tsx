@@ -26,12 +26,7 @@ export default function Showcase() {
           Sie,dass dies eine Demo-Version ist und daher alle Werte angepasst
           sind.)
         </ProjectDescription>
-        <h3>Technologies Used</h3>
-        <p>
-          We used a modern tech stack to ensure scalability, performance, and
-          maintainability. Below are the core technologies employed in this
-          project:
-        </p>
+        <h3>Technologien</h3>
         <br></br>
         <p>
           React, Next.js, Styled Components, MongoDB, Node.js & Express, Vercel
