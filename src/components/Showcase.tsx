@@ -22,9 +22,7 @@ export default function Showcase() {
           benutzerfreundliche Oberfläche, die intuitiven Steuerungen und die
           liebevollen Animationen schaffen eine emotionale Bindung. Durch den
           realistischen Schwierigkeitsgrad wird die Pflege sowohl belohnend als
-          auch berührend. Perfekt für alle Tierliebhaber! (Bitte beachten
-          Sie,dass dies eine Demo-Version ist und daher alle Werte angepasst
-          sind.)
+          auch berührend. Perfekt für alle Tierliebhaber! 
         </ProjectDescription>
         <Separator />
       </ShowcaseContainer>
