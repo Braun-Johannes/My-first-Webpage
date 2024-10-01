@@ -27,7 +27,6 @@ export default function Showcase() {
           sind.)
         </ProjectDescription>
         <h3>Technologien</h3>
-        <br></br>
         <p>
           React, Next.js, Styled Components, MongoDB, Node.js & Express, Vercel
         </p>
