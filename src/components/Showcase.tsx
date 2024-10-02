@@ -31,7 +31,7 @@ export default function Showcase() {
           React, Next.js, Styled Components, MongoDB, Node.js & Express, Vercel
         </p>
         <h4>Repository:</h4>
-        <RepositoryLink href="https://github.com/Braun-Johannes/Survival-Pets">
+        <RepositoryLink target="_blank" rel="noopener noreferrer" href="https://github.com/Braun-Johannes/Survival-Pets">
           Survival-Pets
         </RepositoryLink>
         <Separator />
