@@ -30,6 +30,10 @@ export default function Showcase() {
         <p>
           React, Next.js, Styled Components, MongoDB, Node.js & Express, Vercel
         </p>
+        <h4>Repository:</h4>
+        <RepositoryLink href="https://github.com/Braun-Johannes/Survival-Pets">
+          Survival-Pets
+        </RepositoryLink>
         <Separator />
       </ShowcaseContainer>
     </>
@@ -66,4 +70,9 @@ const IframeContainer = styled.iframe`
   width: 100%;
   height: 100vh;
   border: none;
+`;
+
+const RepositoryLink = styled.a`
+  color: #3b8383;
+  text-decoration: none;
 `;
