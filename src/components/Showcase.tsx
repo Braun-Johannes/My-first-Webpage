@@ -8,7 +8,7 @@ export default function Showcase() {
       <ShowcaseContainer>
         <ProjectTitle>&quot;Survival-Pets&quot;</ProjectTitle>
         <IframeContainer
-          src="https://capstone-project-battle-pets.vercel.app/"
+          src="https://survival-pets.vercel.app/"
           title="Survival-Pets Project"
           aria-label="Survival-Pets Project"
         />
